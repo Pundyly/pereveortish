@@ -1,0 +1,514 @@
+{
+  "__guid": "4e35c171-5b34-4d4c-ad75-263db0acfc13",
+  "GameObjects": [
+    {
+      "__guid": "7893faf4-4bae-4c13-ae8c-8ac957048ffe",
+      "Flags": 0,
+      "Name": "Plane",
+      "Position": "7.550911,8.88829,-108.6654",
+      "Scale": "10,10,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "0830a2b5-3d76-444b-a542-5d91a5e88a04",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/plane.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "621aac86-adc5-4a72-8f0b-b280d2450198",
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "28.31839,78.45249,98.08857",
+      "Rotation": "-0.002582562,0.493176,0.004555384,0.8699138",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "21fe3137-6f3d-4956-a8bf-d3a4c863ffa4",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "75ac7dd2-9c0b-444f-b876-1fa55b3ae90c",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "-24.75314,-28.2943,44.55542",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "49f91ac2-c9cd-48ef-9bec-1532fba00876",
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "208806c6-af68-4d72-9b69-8a6280b471de",
+      "Flags": 0,
+      "Name": "Network Helper",
+      "Position": "1655.01,1059.316,1688.212",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "e83bec7d-3a29-45de-af97-25a5beaf2e62",
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/debil.prefab"
+          },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/spawnpoint.prefab"
+            }
+          ],
+          "StartServer": true
+        }
+      ]
+    },
+    {
+      "__guid": "757656c8-75f3-4b94-9626-499ce0aef44a",
+      "Flags": 0,
+      "Name": "spawnpoint",
+      "Position": "0,0,24.22212",
+      "Tags": "light_point,light",
+      "Enabled": true,
+      "__Prefab": "prefabs/spawnpoint.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "ec4f511d-b567-4fa0-ab0e-ad9be82766ab",
+      "Flags": 0,
+      "Name": "Cube",
+      "Position": "-74.45063,-379.745,5.606865",
+      "Scale": "6.299998,0.3,1.900058",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "0631a2ad-4b6e-4c67-a267-e96aee089c9e",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "lol/redstone.vmat",
+          "Model": "models/dev/box.vmdl",
+          "RenderOptions": {
+            "GameLayer": false,
+            "OverlayLayer": false,
+            "BloomLayer": true,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "ccdc5eff-0721-4ca1-bf0b-8e958a39e75f",
+      "Flags": 0,
+      "Name": "TEXT",
+      "Position": "113.582,-254.0256,-84.50586",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "02793a62-2a57-4f69-a702-a9ac071e76ae",
+          "Flags": 0,
+          "Name": "Text (1)",
+          "Position": "162.7157,254.9239,98.85431",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "f14dcfe1-facb-4ead-a1f4-ec47248178ad",
+              "BlendMode": "Normal",
+              "Color": "0.76667,0,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "Hui! Welcome to Pereveortesh!\nGame(tool) about rotating and moving.\nYou can use this to get photos and videos of maps and etc.\nGo to menu and open this game with map!\n\u2764",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "6049f7d6-b4df-43c1-ba47-f37f7cb2287e",
+          "Flags": 0,
+          "Name": "Text (11)",
+          "Position": "166.1143,254.0256,98.85431",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "e52a45e6-4c6b-4565-8b65-ca49ed8ac52c",
+              "BlendMode": "Normal",
+              "Color": "0,0.04341,0.16279,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "Hui! Welcome to Pereveortesh!\nGame(tool) about rotating and moving.\nYou can use this to get photos and videos of maps and etc.\nGo to menu and open this game with map!\n\u2764",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "632e2c11-78a6-4ce7-b74e-ca7ecf7876bf",
+          "Flags": 0,
+          "Name": "Text (4)",
+          "Position": "163.6741,254.0256,98.85431",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "997836c4-e922-4d20-9436-02bc4554876b",
+              "BlendMode": "Normal",
+              "Color": "0,0.26667,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "Hui! Welcome to Pereveortesh!\nGame(tool) about rotating and moving.\nYou can use this to get photos and videos of maps and etc.\nGo to menu and open this game with map!\n\u2764",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "7b057a9b-4e4a-4a45-a31c-f8194a003954",
+          "Flags": 0,
+          "Name": "Text (3)",
+          "Position": "166.1645,254.0256,98.85431",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "d0b0acd6-1bb3-4e72-9573-33ebc0b3310b",
+              "BlendMode": "Normal",
+              "Color": "0,0.08558,0.32093,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "Hui! Welcome to Pereveortesh!\nGame(tool) about rotating and moving.\nYou can use this to get photos and videos of maps and etc.\nGo to menu and open this game with map!\n\u2764",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "773434b2-dfcc-45f0-9b46-33078b5d6db5",
+          "Flags": 0,
+          "Name": "Text (2)",
+          "Position": "168.2238,254.0256,98.85431",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "4076fd85-3a05-456d-827d-e918e499d44a",
+              "BlendMode": "Normal",
+              "Color": "0,0.08558,0.32093,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "Hui! Welcome to Pereveortesh!\nGame(tool) about rotating and moving.\nYou can use this to get photos and videos of maps and etc.\nGo to menu and open this game with map!\n\u2764",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "d13a7468-5e86-40a2-910e-9b255877a966",
+          "Flags": 0,
+          "Name": "Text (14)",
+          "Position": "165.7707,254.0256,98.85431",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "7f8cad1a-8f7b-4fc8-8124-0a8fe091b41b",
+              "BlendMode": "Normal",
+              "Color": "0,0.08558,0.32093,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "Hui! Welcome to Pereveortesh!\nGame(tool) about rotating and moving.\nYou can use this to get photos and videos of maps and etc.\nGo to menu and open this game with map!\n\u2764",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "a7550ec0-bdec-4a28-bcee-f94cf22088f2",
+          "Flags": 0,
+          "Name": "Text (10)",
+          "Position": "169.569,254.2529,5.693787",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "c72d15b1-8a5c-46b9-8c49-8db7f2c84eb6",
+              "BlendMode": "Normal",
+              "Color": "0,0.26667,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "The Pereveortesh means flipping thing!\nBye s\u0026box. (maybe)",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "070a8bd9-7494-49bf-9173-2707d31fdf4a",
+          "Flags": 0,
+          "Name": "Text (6)",
+          "Position": "173.5444,254.0256,5.693802",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "a4773859-cbe0-4bce-baff-cf96742b9741",
+              "BlendMode": "Normal",
+              "Color": "0,0.06698,0.25116,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "The Pereveortesh means flipping thing!\nBye s\u0026box. (maybe)",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "1aa1252e-a682-475f-9def-cb7d5d381995",
+          "Flags": 0,
+          "Name": "Text (8)",
+          "Position": "171.0423,254.0256,5.693802",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "ab886e3a-b6e1-4fbf-873a-d9f73e1be489",
+              "BlendMode": "Normal",
+              "Color": "0,0.06698,0.25116,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "The Pereveortesh means flipping thing!\nBye s\u0026box. (maybe)",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "b08c2a56-5791-42b8-973b-98589e5a613a",
+          "Flags": 0,
+          "Name": "Text (9)",
+          "Position": "170.1544,254.0256,5.693802",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "2995b70e-b90d-42df-9859-0659accf6011",
+              "BlendMode": "Normal",
+              "Color": "0,0.09054,0.33953,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "The Pereveortesh means flipping thing!\nBye s\u0026box. (maybe)",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "396321eb-bf5a-4b71-b5cf-989577d5b355",
+          "Flags": 0,
+          "Name": "Text (7)",
+          "Position": "172.543,254.0256,5.693802",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "3380fa2e-4d24-419e-b282-709cb1d8fc2c",
+              "BlendMode": "Normal",
+              "Color": "0,0.06698,0.25116,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "The Pereveortesh means flipping thing!\nBye s\u0026box. (maybe)",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "b77e6aec-0b7e-45e2-9258-06d4e9743894",
+          "Flags": 0,
+          "Name": "Text (5)",
+          "Position": "175.0629,254.0256,5.693802",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "1351ce4b-b425-4cb6-8b5f-043bd828a4f1",
+              "BlendMode": "Normal",
+              "Color": "0,0.06698,0.25116,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "The Pereveortesh means flipping thing!\nBye s\u0026box. (maybe)",
+              "TextAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "__guid": "4049d763-75d1-45aa-97bf-d24e9e7e7ee8",
+          "Flags": 0,
+          "Name": "Text (15)",
+          "Position": "168.7792,254.0256,5.693802",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "fbe6c26e-284c-4186-8083-b615cfe5d72c",
+              "BlendMode": "Normal",
+              "Color": "1,0.56667,0,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "Text": "The Pereveortesh means flipping thing!\nBye s\u0026box. (maybe)",
+              "TextAlignment": "Center"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "game",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [
+    "bananapeelsteam.redstone#41516"
+  ],
+  "__version": 1
+}

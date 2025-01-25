@@ -1,0 +1,21 @@
+Devmenu
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	> .devmenu
+	{
+		position: absolute;
+		top: 32px;
+		left: 32px;
+		font-size: 64;
+		font-weight: bold;
+		text-stroke: 8px #000000;
+		color: white;
+		align-items: center;
+		flex-direction: column;
+	}
+}

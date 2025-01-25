@@ -1,0 +1,71 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<style>
+	Hud {
+		pointer-events: all;
+	}
+	.title {
+		font-size: 25px;
+		font-family: Poppins;
+		color: #ffffff;
+		pointer-events: all;
+	}
+
+	.vital {
+		font-size: 25px;
+		font-family: Poppins;
+		color: #ffffff;
+		pointer-events: all;
+	}
+</style>
+
+<root class="menuforgame">
+	<div class="name">
+		Pereveortish
+	</div>
+	<div class="vital">
+		<div class="button" onclick=@CreateGame>
+			Create game
+		</div>
+		<div class="button1" onclick=@PlayDemoIThink>
+			Play Demo
+		</div>
+		<div class="button2" onclick=@QuitGame>
+			Quit
+		</div>
+	</div>
+	<div class="info">
+		<div class="Version">
+			v0.0.2
+		</div>
+		<div class="bywho">
+			Made by Banana Peels Team.
+		</div>
+	</div>
+
+
+</root>
+
+@code
+{
+	[Property] public SceneFile DemoScene;
+	[Property] public SceneFile MapScene;
+	public void PlayDemoIThink()
+	{
+		Scene.Load(DemoScene);
+	}
+	
+	public void QuitGame()
+	{
+		Game.Close();
+	}
+	
+	public void CreateGame()
+	{
+		//Game.Overlay.ShowLauncher(Game.Ident);
+		Scene.Load(MapScene);
+	}
+	protected override int BuildHash() => System.HashCode.Combine( RealTime.Now.CeilToInt() );
+}

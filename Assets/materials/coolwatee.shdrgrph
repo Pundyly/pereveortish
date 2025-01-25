@@ -1,0 +1,94 @@
+{
+  "Model": null,
+  "Description": "",
+  "BlendMode": "Opaque",
+  "nodes": [
+    {
+      "_class": "Result",
+      "DefaultOpacity": 1,
+      "DefaultRoughness": 0,
+      "DefaultMetalness": 0,
+      "DefaultAmbientOcclusion": 1,
+      "Identifier": "0",
+      "Position": "48,-384",
+      "Albedo": {
+        "Identifier": "3",
+        "Output": "Result"
+      },
+      "Opacity": {
+        "Identifier": "3",
+        "Output": "A"
+      },
+      "AmbientOcclusion": {
+        "Identifier": "2",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "Camera",
+      "Identifier": "1",
+      "Position": "-688,-224"
+    },
+    {
+      "_class": "CrossProduct",
+      "DefaultA": "0,0,0",
+      "DefaultB": "0,0,0",
+      "Identifier": "2",
+      "Position": "-368,-224",
+      "A": {
+        "Identifier": "1",
+        "Output": "WorldPosition"
+      },
+      "B": {
+        "Identifier": "1",
+        "Output": "Direction"
+      }
+    },
+    {
+      "_class": "TextureSampler",
+      "Image": "models/citizen_clothes/vest/diving_rebreather/textures/waterproof_backpack_color.png",
+      "Sampler": {},
+      "UI": {
+        "Default": "1,1,1,1",
+        "SrgbRead": true
+      },
+      "Identifier": "3",
+      "Position": "-496,-464",
+      "Coords": {
+        "Identifier": "5",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "Time",
+      "Identifier": "4",
+      "Position": "-1200,-448"
+    },
+    {
+      "_class": "Divide",
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "5",
+      "Position": "-832,-432",
+      "A": {
+        "Identifier": "4",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "6",
+        "Output": "Result"
+      }
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 100,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "6",
+      "Position": "-1216,-336"
+    }
+  ]
+}

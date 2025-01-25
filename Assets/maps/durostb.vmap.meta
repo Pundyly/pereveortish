@@ -1,0 +1,23 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "DUROStb",
+      "Type": "map",
+      "Org": "bananapeelsteam",
+      "Ident": "durostb",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "bananapeelsteam.cor_wood#43807"
+      ],
+      "IsWhitelistDisabled": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/durostb.vmap",
+        "ParentPackage": "bananapeelsteam.pereveortish"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "demonstration_of_light",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "demonstration_of_light",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "facepunch.stone_brick_tile_01#47062"
+      ],
+      "IsWhitelistDisabled": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/demonstration_of_light.vmap",
+        "ParentPackage": "bananapeelsteam.pereveortish"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "RootObject": {
+    "__guid": "b3c6c7fb-0fa2-47ee-a4b8-682c21fc5b00",
+    "Flags": 0,
+    "Name": "spawnpoint",
+    "Tags": "light_point,light",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.PointLight",
+        "__guid": "26ecd06e-84e2-4ae7-b551-cd750f112928",
+        "Attenuation": 1,
+        "FogMode": "Enabled",
+        "FogStrength": 1,
+        "LightColor": "0.91373,0.98039,1,1",
+        "Radius": 400,
+        "Shadows": true
+      }
+    ],
+    "Children": [],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

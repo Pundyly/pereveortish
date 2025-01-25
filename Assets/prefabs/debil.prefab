@@ -1,0 +1,201 @@
+{
+  "RootObject": {
+    "__guid": "043598e3-1d9b-406d-8fcf-93857747de29",
+    "Flags": 0,
+    "Name": "debil",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Fixedplayer",
+        "__guid": "e58c7e3d-fe04-41c4-ab56-95fb04dfa6a4",
+        "cam": {
+          "_type": "gameobject",
+          "go": "fe7e9e80-7bd1-4111-86c4-12110e1fd5f0"
+        },
+        "devmenu": {
+          "_type": "gameobject",
+          "go": "3c604c14-4fbd-450e-b473-a9689664035a"
+        },
+        "MenuMap": "scenes/menuforthegame.scene",
+        "PointMode": false,
+        "tab": {
+          "_type": "gameobject",
+          "go": "c81ed125-6c10-47aa-b037-8484db10e8cf"
+        }
+      },
+      {
+        "__type": "MouseOn",
+        "__guid": "ad0891e7-f1fc-4bcd-95ad-ce83d575c416",
+        "isMouseOn": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "fe7e9e80-7bd1-4111-86c4-12110e1fd5f0",
+        "Flags": 0,
+        "Name": "Local Camera",
+        "Tags": "maincamera",
+        "Components": [
+          {
+            "__type": "Sandbox.CameraComponent",
+            "__guid": "76420074-fde2-4995-91f8-af0d3280cbdc",
+            "BackgroundColor": "0.33333,0.46275,0.52157,1",
+            "ClearFlags": "All",
+            "FieldOfView": 60,
+            "IsMainCamera": true,
+            "Orthographic": false,
+            "OrthographicHeight": 1204,
+            "Priority": 1,
+            "RenderExcludeTags": "",
+            "RenderTags": "",
+            "TargetEye": "None",
+            "Viewport": "0,0,1,1",
+            "ZFar": 10000,
+            "ZNear": 10
+          }
+        ]
+      },
+      {
+        "__guid": "c81ed125-6c10-47aa-b037-8484db10e8cf",
+        "Flags": 0,
+        "Name": "Tab",
+        "Components": [
+          {
+            "__type": "Sandbox.ScreenPanel",
+            "__guid": "52ae1a2e-577a-4746-99fa-b7a3a96d52cb",
+            "AutoScreenScale": true,
+            "Opacity": 1,
+            "Scale": 1,
+            "ScaleStrategy": "ConsistentHeight",
+            "ZIndex": 20
+          },
+          {
+            "__type": "HelpInformation",
+            "__guid": "7ab49f5a-afdd-446a-8b3a-51fb8ea9eb6b",
+            "MyStringValue": "\n    Controls: W, A, S, D, Q, E - for camera rotating, R - to reset!\n                      U, H, J, K - for line move, O, L - for normal move. T, G - fir edit field of view, N, M - for speed,END button - exit ot menu, 9 - switch info menu, P - switch metod, 5 - Set Point, 6- Swith Point Mode; 0 - close tab"
+          },
+          {
+            "__type": "Tab",
+            "__guid": "c29f749a-9fe1-4999-aa82-d00ac3d6726f",
+            "Tabclose": {
+              "_type": "gameobject",
+              "go": "c81ed125-6c10-47aa-b037-8484db10e8cf"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "3c604c14-4fbd-450e-b473-a9689664035a",
+        "Flags": 0,
+        "Name": "devmenu",
+        "Components": [
+          {
+            "__type": "Sandbox.ScreenPanel",
+            "__guid": "b095c277-19d6-4fad-ba48-ee730f6650b2",
+            "AutoScreenScale": true,
+            "Opacity": 1,
+            "Scale": 1,
+            "ScaleStrategy": "ConsistentHeight",
+            "ZIndex": 19
+          },
+          {
+            "__type": "Devmenu",
+            "__guid": "b552b4fd-01c8-4108-a5ee-5b44431cd45f",
+            "pluyer": {
+              "_type": "component",
+              "component_id": "e58c7e3d-fe04-41c4-ab56-95fb04dfa6a4",
+              "go": "043598e3-1d9b-406d-8fcf-93857747de29",
+              "component_type": "Fixedplayer"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "3f2b2a30-3d80-4c4a-8a21-640228311db3",
+        "Flags": 0,
+        "Name": "World",
+        "Position": "0,0,21.9898",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "53f49806-4656-44f6-b66e-e2e9848e7d36",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "512,512",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "NameTagPanel",
+            "__guid": "cf9a46bb-0b9a-4ed0-95db-0df6aa46f01a"
+          }
+        ]
+      },
+      {
+        "__guid": "ab9defc1-235c-4670-8f74-d1c57e883a66",
+        "Flags": 0,
+        "Name": "Sphere",
+        "Scale": "0.15,0.15,0.15",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "1a30ae60-a7f6-4ad9-a47e-4ee5adb2108d",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/coolface.vmat",
+            "Model": "models/dev/sphere.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "870fdc61-50f3-4633-be9a-4e2b442a61c7",
+        "Flags": 0,
+        "Name": "Chat\u0026Scoreboard",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ScreenPanel",
+            "__guid": "d44ac128-3b36-448f-8d98-f891c96299c8",
+            "AutoScreenScale": true,
+            "Opacity": 1,
+            "Scale": 1,
+            "ScaleStrategy": "ConsistentHeight",
+            "ZIndex": 100
+          },
+          {
+            "__type": "Chat",
+            "__guid": "c376e827-46ae-4281-8e24-73629986b5b6"
+          },
+          {
+            "__type": "Scoreboard",
+            "__guid": "c3b4f504-6671-45aa-bcf7-6e8fb7699185"
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

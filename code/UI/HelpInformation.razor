@@ -1,0 +1,29 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<style>
+	.title 
+	{
+		margin: 100px;
+		font-size: 32px;
+		color: white;
+		text-stroke: 8px #000000;
+		text-shadow: 2px 2px 10px  black;
+	}
+		
+</style>
+
+<root>
+	<div class="title">@MyStringValue</div>
+</root>
+
+@code
+{
+	[Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+}

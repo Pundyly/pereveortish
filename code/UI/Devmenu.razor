@@ -1,0 +1,26 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@inherits Component
+
+<root>
+	<div class="devmenu">
+		<p>🐇speed: @pluyer.speedmove</p>
+		<p>🎦FOV: @pluyer.FOV</p>
+		<p>🖥️Method: @pluyer.isFixedUpdated</p>
+	</div>
+</root>
+
+@code
+{	
+	
+	[Property] public Fixedplayer pluyer { get; set;}
+	private string Method;
+
+	
+
+	protected override int BuildHash()
+	{
+		return System.HashCode.Combine(pluyer.speedmove, pluyer.FOV, pluyer.isFixedUpdated);
+	}
+}

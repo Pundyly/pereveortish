@@ -1,0 +1,106 @@
+{
+  "__guid": "f04740ea-0ac0-46be-ac69-806e95487fcb",
+  "GameObjects": [
+    {
+      "__guid": "c4790ea8-1bf7-4d26-a0ed-81853a72bc34",
+      "Flags": 0,
+      "Name": "Screen",
+      "Position": "-154.8656,-221.4735,279.1562",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "cf683c5d-2d9d-4d89-b023-0a3c1f76cbce",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        },
+        {
+          "__type": "Menu",
+          "__guid": "7c465c2c-8275-4f26-bd42-33f2f39f54e4",
+          "DemoScene": "scenes/game.scene",
+          "MapScene": "scenes/map.scene"
+        },
+        {
+          "__type": "MouseOn",
+          "__guid": "81454b3c-1b4d-40bd-898a-16eee18973f3",
+          "isMouseOn": true
+        }
+      ]
+    },
+    {
+      "__guid": "1bf2fcd5-3ef1-48d2-b351-6452e9ffd445",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "149.3263,149.3264,-211.1794",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "37f31598-df95-48e9-b504-468d5aec6e83",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "60f33e5d-e125-444a-a0aa-8e625bbcf032",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "149.3263,149.3264,-211.1794",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "e2dd6954-23c2-4223-ba77-c4d08e4aee12",
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "menuforthegame",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [],
+  "IsValid": true,
+  "__version": 1
+}
